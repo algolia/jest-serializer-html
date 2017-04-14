@@ -1,0 +1,46 @@
+{
+  "name": "jest-serializer-html",
+  "version": "1.0.0",
+  "description": "Jest snapshot serializer that beautifies HTML.",
+  "main": "index.js",
+  "author": "Raymond RUTJES <raymond.rutjes@gmail.com> (https://github.com/rayrutjes/)",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayrutjes/jest-serializer-html.git"
+  },
+  "keywords": [
+    "jest",
+    "snapshot",
+    "serializer",
+    "html",
+    "snapshotSerializer",
+    "string",
+    "vue",
+    "vue.js",
+    "test",
+    "beautifier",
+    "js-beautify"
+  ],
+  "bugs": {
+    "url": "https://github.com/rayrutjes/jest-serializer-html/issues"
+  },
+  "homepage": "https://github.com/rayrutjes/jest-serializer-html#readme",
+  "dependencies": {
+    "js-beautify": "^1.6.12"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "./index.js"
+    ]
+  }
+}
