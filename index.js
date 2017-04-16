@@ -7,6 +7,7 @@ module.exports = {
   print(val) {
     return beautify(val, {
       unformatted: [],
+      wrap_attributes: 'force-aligned'
     });
   },
 };
