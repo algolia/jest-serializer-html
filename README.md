@@ -3,6 +3,8 @@
 [![NPM version](https://badge.fury.io/js/jest-serializer-html.svg)](https://npmjs.org/package/jest-serializer-html)
 [![Build Status](https://travis-ci.org/rayrutjes/jest-serializer-html.svg?branch=master)](https://travis-ci.org/rayrutjes/jest-serializer-html)
 
+When using this Jest serializer, it will turn any string starting with '<' to nicely indented HTML in the snapshot.
+
 This serializer is based on [js-beautify](https://github.com/beautify-web/js-beautify) and is configured to indent HTML tags as much as possible to ease readability of diffs in case of failing snapshot tests.
 
 ## Install
@@ -23,6 +25,70 @@ Update package.json to [let Jest know about the serializer](https://facebook.git
 "jest": {
   "snapshotSerializers": ["jest-serializer-html"]
 }
+```
+
+## Vanilla JS Example
+
+```js
+test('should beautify HTML', () => {
+  expect('<ul><li><a href="#">My HTML</a></li></ul>').toMatchSnapshot();
+});
+```
+
+Will output:
+
+```js
+exports[`should beautify HTML 1`] = `
+<ul>
+    <li>
+        <a href="#">My HTML</a>
+    </li>
+</ul>
+`;
+```
+
+## Vue.js component output example
+
+```js
+import Vue from 'vue';
+const Hello = {
+  props: {
+    msg: {
+      type: String,
+      default: 'World'
+    }
+  },
+  template: `
+    <h1>Hello ${ msg }!</h1>
+    <ul><li><a href="#">My HTML</a></li></ul>
+  `
+};
+
+test('should beautify HTML', () => {
+  const Component = Vue.extend(Hello);
+  const vm = new Component({
+    propsData: {
+      msg: 'You'
+    }
+  });
+
+  vm.$mount();
+
+  expect(vm.$el.outerHTML).toMatchSnapshot();
+});
+```
+
+Will output:
+
+```js
+exports[`should beautify HTML 1`] = `
+<h1>Hello You!</h1>
+<ul>
+    <li>
+        <a href="#">My HTML</a>
+    </li>
+</ul>
+`;
 ```
 
 ## Special thanks
