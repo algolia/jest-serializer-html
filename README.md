@@ -3,7 +3,7 @@
 [![NPM version](https://badge.fury.io/js/jest-serializer-html.svg)](https://npmjs.org/package/jest-serializer-html)
 [![Build Status](https://travis-ci.org/rayrutjes/jest-serializer-html.svg?branch=master)](https://travis-ci.org/rayrutjes/jest-serializer-html)
 
-This serializer is based on [js-beautify](https://github.com/beautify-web/js-beautify) and is configured to indent HTML tags as much as possible to ease readability of failing tests.
+This serializer is based on [js-beautify](https://github.com/beautify-web/js-beautify) and is configured to indent HTML tags as much as possible to ease readability of diffs in case of failing snapshot tests.
 
 ## Install
 
