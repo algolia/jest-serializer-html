@@ -6,7 +6,8 @@
   "author": "Raymond RUTJES <raymond.rutjes@gmail.com> (https://github.com/rayrutjes/)",
   "license": "MIT",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "test:update": "jest --verbose --updateSnapshot"
   },
   "files": [
     "index.js"
