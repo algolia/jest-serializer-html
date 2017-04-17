@@ -16,7 +16,7 @@ Add the package as a dev-dependency:
 npm install --save-dev jest-serializer-html
 
 # With yarn
-yarn add -D jest-serializer-html
+yarn add --dev jest-serializer-html
 ```
 
 Update package.json to [let Jest know about the serializer](https://facebook.github.io/jest/docs/configuration.html#snapshotserializers-array-string):
@@ -40,9 +40,9 @@ Will output:
 ```js
 exports[`should beautify HTML 1`] = `
 <ul>
-    <li>
-        <a href="#">My HTML</a>
-    </li>
+  <li>
+    <a href="#">My HTML</a>
+  </li>
 </ul>
 `;
 ```
@@ -84,9 +84,9 @@ Will output:
 exports[`should beautify HTML 1`] = `
 <h1>Hello You!</h1>
 <ul>
-    <li>
-        <a href="#">My HTML</a>
-    </li>
+  <li>
+    <a href="#">My HTML</a>
+  </li>
 </ul>
 `;
 ```
