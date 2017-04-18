@@ -5,7 +5,7 @@
 
 When using this Jest serializer, it will turn any string starting with '<' to nicely indented HTML in the snapshot.
 
-This serializer is based on [js-beautify](https://github.com/beautify-web/js-beautify) and is configured to indent HTML tags as much as possible to ease readability of diffs in case of failing snapshot tests.
+This serializer is based on [diffable-html](https://github.com/rayrutjes/diffable-html) which is an opinionated HTML formatter that will ease readability of diffs in case of failing snapshot tests.
 
 ## Install
 
@@ -41,7 +41,9 @@ Will output:
 exports[`should beautify HTML 1`] = `
 <ul>
   <li>
-    <a href="#">My HTML</a>
+    <a href="#">
+      My HTML
+    </a>
   </li>
 </ul>
 `;
@@ -60,7 +62,7 @@ const Hello = {
   },
   template: `
     <h1>Hello ${ msg }!</h1>
-    <ul><li><a href="#">My HTML</a></li></ul>
+    <ul id="main-list" class="list"><li><a href="#">My HTML</a></li></ul>
   `
 };
 
@@ -82,14 +84,22 @@ Will output:
 
 ```js
 exports[`should beautify HTML 1`] = `
-<h1>Hello You!</h1>
-<ul>
+<h1>
+  Hello You!
+</h1>
+<ul id="main-list"
+    class="list"
+>
   <li>
-    <a href="#">My HTML</a>
+    <a href="#">
+      My HTML
+    </a>
   </li>
 </ul>
 `;
 ```
+
+You can read more about the [HTML formatting here](https://github.com/rayrutjes/diffable-html#readme).
 
 ## Special thanks
 
