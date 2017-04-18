@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/rayrutjes/jest-serializer-html#readme",
   "dependencies": {
-    "js-beautify": "^1.6.12"
+    "diffable-html": "^1.0.0"
   },
   "devDependencies": {
     "jest": "^19.0.2"
