@@ -478,9 +478,9 @@ diff@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.2.0.tgz#c9ce393a4b7cbd0b058a725c93df299027868ff9"
 
-diffable-html@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/diffable-html/-/diffable-html-1.0.0.tgz#5a535f9d1e9133d4af92a2184f7e217e8679fdfb"
+diffable-html@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/diffable-html/-/diffable-html-2.0.0.tgz#0f139b61c8fe4317888d58ed7afb824919824fa3"
   dependencies:
     htmlparser2 "^3.9.2"
 
