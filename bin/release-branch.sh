@@ -18,8 +18,8 @@ if ! yarn; then
   exit 1
 fi
 
-if ! yarn run lint; then
-  echo "Linting failed, aborting..."
+if ! yarn test; then
+  echo "Tests failed, aborting..."
   exit 1
 fi
 
