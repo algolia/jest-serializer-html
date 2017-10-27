@@ -13,6 +13,16 @@ if ! git diff-index --quiet HEAD --; then
   exit 1
 fi
 
+if ! yarn; then
+  echo "Failed to install yarn dependencies, aborting..."
+  exit 1
+fi
+
+if ! yarn test; then
+  echo "Tests failed, aborting..."
+  exit 1
+fi
+
 readonly PACKAGE_VERSION=$(< package.json grep version \
   | head -1 \
   | awk -F: '{ print $2 }' \
