@@ -8,7 +8,8 @@
   "scripts": {
     "test": "jest --verbose",
     "test:update": "jest --verbose --updateSnapshot",
-    "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file"
+    "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file",
+    "changelog:unreleased": "conventional-changelog --preset angular --output-unreleased"
   },
   "files": [
     "index.js"
