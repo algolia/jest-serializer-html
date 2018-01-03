@@ -1,6 +1,6 @@
 {
   "name": "jest-serializer-html",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "Jest snapshot serializer that beautifies HTML.",
   "main": "index.js",
   "author": "Raymond RUTJES <raymond.rutjes@gmail.com> (https://github.com/rayrutjes/)",

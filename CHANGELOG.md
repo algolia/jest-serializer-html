@@ -1,3 +1,13 @@
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v4.0.1...v5.0.0) (2018-01-03)
+
+
+### Features
+
+* remove HTML comments ([20c1322](https://github.com/rayrutjes/jest-serializer-html/commit/20c1322)), closes [#11](https://github.com/rayrutjes/jest-serializer-html/issues/11)
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/rayrutjes/jest-serializer-html/compare/v4.0.0...v4.0.1) (2017-10-18)
 
