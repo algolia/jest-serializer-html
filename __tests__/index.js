@@ -1,4 +1,5 @@
 const html = `<div id="header">
+  <!-- Some comment that should be removed -->
   <a id="logo" href="/">
     <img src="/images/logo.png">
     <span>Vue.js</span>
