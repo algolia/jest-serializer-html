@@ -1,3 +1,13 @@
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v5.0.0...v6.0.0) (2018-12-31)
+
+
+### Features
+
+* better handling of whitespaces ([0bf9273](https://github.com/rayrutjes/jest-serializer-html/commit/0bf9273))
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v4.0.1...v5.0.0) (2018-01-03)
 
