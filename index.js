@@ -2,9 +2,14 @@ var toDiffableHtml = require('diffable-html');
 
 module.exports = {
   test(object) {
-    return typeof object === 'string' && object.trim()[0] === '<';
+    if (typeof object !== 'string') {
+      return false;
+    }
+
+    const trimmed = object.trim();
+    return trimmed.length > 2 && trimmed[0] === '<' && trimmed[trimmed.length - 1] === '>';
   },
   print(val) {
-    return toDiffableHtml(val);
+    return toDiffableHtml(val).trim();
   },
 };
