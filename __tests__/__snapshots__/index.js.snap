@@ -1,7 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should beautify HTML 1`] = `
-
 <div id="header">
   <a id="logo"
      href="/"
@@ -209,7 +208,6 @@ exports[`should beautify HTML 1`] = `
     </li>
   </ul>
 </div>
-
 `;
 
 exports[`should only act on HTML strings 1`] = `"Some text without any tags."`;
