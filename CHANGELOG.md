@@ -1,3 +1,13 @@
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v6.0.0...v7.0.0) (2019-04-28)
+
+
+### Features
+
+* trim diffed HTML output ([#17](https://github.com/rayrutjes/jest-serializer-html/issues/17)) ([aa47789](https://github.com/rayrutjes/jest-serializer-html/commit/aa47789))
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v5.0.0...v6.0.0) (2018-12-31)
 
