@@ -14,6 +14,8 @@ module.exports = {
     );
   },
   print(val) {
-    return toDiffableHtml(val).trim();
+    return toDiffableHtml(val, {
+      sortAttributes: (names) => names.sort((a, b) => b.localeCompare(a)),
+    }).trim();
   },
 };
