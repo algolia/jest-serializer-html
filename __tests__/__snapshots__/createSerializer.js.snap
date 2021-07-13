@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sorts attributes 1`] = `
+<input class="form-control"
+       name="test"
+       value="true"
+>
+`;
