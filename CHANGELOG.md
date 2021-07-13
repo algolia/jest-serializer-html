@@ -1,3 +1,13 @@
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/rayrutjes/jest-serializer-html/compare/v7.0.0...v7.1.0) (2021-07-13)
+
+
+### Features
+
+* add createSerializer ([#19](https://github.com/rayrutjes/jest-serializer-html/issues/19)) ([7ed2a4c](https://github.com/rayrutjes/jest-serializer-html/commit/7ed2a4c))
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/rayrutjes/jest-serializer-html/compare/v6.0.0...v7.0.0) (2019-04-28)
 
